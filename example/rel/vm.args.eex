@@ -9,7 +9,7 @@
 ##  for read only filesystem.
 
 # -name example@0.0.0.0
--setcookie qHeOaem8fnzRhy+QVXpRE//tahX8VCqs+3SGNxQkX7W50RBtXsXBO/xjnptXFd2E
+-setcookie <%= @release.options[:cookie] %>
 
 ## Use Ctrl-C to interrupt the current shell rather than invoking the emulator's
 ## break handler and possibly exiting the VM.
@@ -20,7 +20,7 @@
 -kernel shell_history enabled
 
 ## Enable heartbeat monitoring of the Erlang runtime system
-#-heart -env HEART_BEAT_TIMEOUT 30
+-heart -env HEART_BEAT_TIMEOUT 30
 
 ## Start the Elixir shell
 
